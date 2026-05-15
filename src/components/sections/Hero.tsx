@@ -32,14 +32,14 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
           
           {/* Text Content */}
           <motion.div 
             variants={container}
             initial="hidden"
             animate="show"
-            className="max-w-2xl"
+            className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
           >
             <motion.div variants={item} className="mb-4">
               <span className="inline-block py-1 px-3 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium">
@@ -47,15 +47,15 @@ export const Hero = () => {
               </span>
             </motion.div>
             
-            <motion.h1 variants={item} className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">
+            <motion.h1 variants={item} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">
               Commission-Free Online Ordering Built for Modern Restaurants
             </motion.h1>
             
-            <motion.p variants={item} className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-xl">
+            <motion.p variants={item} className="text-base md:text-lg lg:text-xl text-slate-300 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Launch branded ordering, delivery, loyalty, mobile app, analytics, and customer engagement tools from one powerful platform.
             </motion.p>
             
-            <motion.div variants={item} className="flex flex-col sm:flex-row gap-4">
+            <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link href="/contact">
                 <Button variant="primary" size="lg" className="w-full sm:w-auto text-base">
                   Book a Demo
@@ -74,10 +74,10 @@ export const Hero = () => {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="relative lg:h-[600px] flex items-center justify-center lg:justify-end"
+            className="relative flex items-center justify-center lg:justify-end mt-8 lg:mt-0"
           >
             {/* Main Device Mockup */}
-            <div className="relative w-full max-w-2xl rounded-[2rem] overflow-hidden z-20 shadow-2xl border border-slate-200 bg-slate-900">
+            <div className="relative w-full max-w-lg lg:max-w-2xl rounded-[2rem] overflow-hidden z-20 shadow-2xl border border-slate-200 bg-slate-900">
               <img 
                 src="/images/hero-dashboard-mockup.webp" 
                 alt="Merchant Orders Dashboard" 
@@ -110,13 +110,13 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* Floating Elements */}
+            {/* Floating Elements — hidden on small screens to avoid overflow */}
             <motion.div 
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute -left-6 top-20 bg-white p-4 rounded-xl shadow-xl z-30 flex items-center gap-3 border border-slate-100"
+              className="hidden sm:flex absolute -left-4 top-16 bg-white p-3 rounded-xl shadow-xl z-30 items-center gap-3 border border-slate-100"
             >
-              <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 font-bold">🍔</div>
+              <div className="w-9 h-9 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 font-bold">🍔</div>
               <div>
                 <div className="text-sm font-bold text-slate-800">New Order</div>
                 <div className="text-xs text-slate-500">Pickup in 15 mins</div>
@@ -126,9 +126,9 @@ export const Hero = () => {
             <motion.div 
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute -right-6 bottom-32 bg-white p-4 rounded-xl shadow-xl z-30 flex items-center gap-3 border border-slate-100"
+              className="hidden sm:flex absolute -right-4 bottom-24 bg-white p-3 rounded-xl shadow-xl z-30 items-center gap-3 border border-slate-100"
             >
-              <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-500 font-bold">↑</div>
+              <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-500 font-bold">↑</div>
               <div>
                 <div className="text-sm font-bold text-slate-800">+24% Sales</div>
                 <div className="text-xs text-slate-500">vs last week</div>

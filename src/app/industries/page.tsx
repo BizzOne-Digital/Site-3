@@ -175,7 +175,7 @@ export default function IndustriesPage() {
             {industryUseCases.map((industry, index) => (
               <AnimatedSection key={index} animation="fade-up" className="scroll-mt-32" id={industry.id}>
                 <div className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100">
-                  <div className="flex flex-col md:flex-row gap-8 items-start">
+                  <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start">
                     <div className="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
                       <industry.icon size={32} />
                     </div>
@@ -183,7 +183,7 @@ export default function IndustriesPage() {
                       <h3 className="text-2xl font-bold text-slate-900 mb-4">{industry.title}</h3>
                       <p className="text-slate-600 text-lg mb-6">{industry.description}</p>
                       
-                      <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                         {industry.features.map((feature, i) => (
                           <div key={i} className="flex items-start gap-3">
                             <CheckCircle2 size={20} className="text-emerald-500 shrink-0 mt-0.5" />

@@ -90,7 +90,7 @@ export default function ContactPage() {
 
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-3 gap-12 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-10 lg:gap-8 max-w-6xl mx-auto">
             
             {/* Contact Info */}
             <div className="lg:col-span-1 space-y-8">

@@ -54,35 +54,35 @@ export const HowItWorksTimeline = () => {
             style={{ height: lineHeight }}
           />
 
-          <div className="space-y-24 relative z-20">
+          <div className="space-y-16 md:space-y-24 relative z-20">
             {steps.map((step, index) => (
               <div 
                 key={index} 
-                className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 ${
+                className={`flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-16 ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
                 {/* Content Side */}
-                <div className={`w-full md:w-1/2 ${index % 2 === 1 ? "md:text-left" : "md:text-right"} pl-12 md:pl-0`}>
+                <div className={`w-full md:w-1/2 ${index % 2 === 1 ? "md:text-left" : "md:text-right"} pl-14 md:pl-0`}>
                   <AnimatedSection 
-                    animation={index % 2 === 1 ? "fade-up" : "fade-up"} 
+                    animation="fade-up"
                     delay={0.2}
                   >
                     <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 font-bold text-sm mb-4">
                       Step {step.number}
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">{step.title}</h3>
-                    <p className="text-slate-600 text-lg">{step.description}</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">{step.title}</h3>
+                    <p className="text-slate-600 text-base md:text-lg">{step.description}</p>
                   </AnimatedSection>
                 </div>
 
-                {/* Center Dot */}
+                {/* Center Dot — desktop */}
                 <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full border-4 border-white bg-emerald-500 transform -translate-x-[14px] md:-translate-x-1/2 shadow-md shadow-emerald-200 z-20 hidden md:block" />
                 
-                {/* Mobile Center Dot */}
-                <div className="absolute left-4 w-8 h-8 rounded-full border-4 border-white bg-emerald-500 transform -translate-x-[14px] shadow-md shadow-emerald-200 z-20 md:hidden mt-1" />
+                {/* Mobile Dot */}
+                <div className="absolute left-4 w-8 h-8 rounded-full border-4 border-white bg-emerald-500 transform -translate-x-[14px] shadow-md shadow-emerald-200 z-20 md:hidden" />
 
-                {/* Visual / Empty Side */}
+                {/* Visual Side — desktop only */}
                 <div className="w-full md:w-1/2 hidden md:block">
                   <AnimatedSection delay={0.4}>
                     <div className="w-full bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden relative group">

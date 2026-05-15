@@ -26,7 +26,7 @@ export const IntegrationsSection = () => {
         </AnimatedSection>
 
         {/* Orbiting / Grid of Integration Placeholders */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
           {[
             "Square", "Toast", "Clover", "Stripe", 
             "Uber Direct", "DoorDash Drive", "Mailchimp", "QuickBooks"

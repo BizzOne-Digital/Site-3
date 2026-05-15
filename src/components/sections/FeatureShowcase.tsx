@@ -24,11 +24,11 @@ export const FeatureShowcase = () => {
           </p>
         </AnimatedSection>
 
-        <div className="space-y-32">
+        <div className="space-y-20 md:space-y-32">
           {showcaseFeatures.map((feature, index) => (
             <div 
               key={feature.id} 
-              className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${
+              className={`flex flex-col lg:flex-row items-center gap-10 lg:gap-20 ${
                 index % 2 === 1 ? "lg:flex-row-reverse" : ""
               }`}
             >
