@@ -5,8 +5,14 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection"
 import { CTA } from "@/components/sections/CTA"
 
 export const metadata: Metadata = {
-  title: "Services | Merchant Orders",
-  description: "Comprehensive services built around restaurant growth. Increase revenue and streamline operations.",
+  title: "Restaurant Ordering Services | Merchant Orders",
+  description: "Merchant Orders provides digital ordering services for restaurants, including online ordering setup, branded websites, customer engagement, delivery workflows, and reporting tools.",
+  alternates: { canonical: "https://www.merchantorders.io/services" },
+  openGraph: {
+    url: "https://www.merchantorders.io/services",
+    title: "Restaurant Ordering Services | Merchant Orders",
+    description: "Merchant Orders provides digital ordering services for restaurants, including online ordering setup, branded websites, customer engagement, delivery workflows, and reporting tools.",
+  },
 }
 
 export default function ServicesPage() {

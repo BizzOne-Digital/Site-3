@@ -2,7 +2,7 @@
 
 import React from "react"
 import Link from "next/link"
-import { Mail, Phone, MapPin, Globe } from "lucide-react"
+import { Mail, Phone } from "lucide-react"
 
 export const Footer = () => {
   return (
@@ -28,16 +28,11 @@ export const Footer = () => {
               </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Commission-free online ordering built for modern restaurants. Launch branded ordering, delivery, loyalty, and analytics from one powerful platform.
+              Powerful online ordering built for modern restaurants. Launch branded ordering, delivery, loyalty, and analytics from one powerful platform.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <Globe size={20} />
-                <span className="sr-only">Social Link</span>
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <Globe size={20} />
-                <span className="sr-only">Social Link</span>
+              <a href="mailto:support@merchantorders.io" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">
+                support@merchantorders.io
               </a>
             </div>
           </div>
@@ -71,15 +66,15 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail size={20} className="text-emerald-500 shrink-0 mt-0.5" />
-                <span>[contact@merchantorders.io]</span>
+                <a href="mailto:support@merchantorders.io" className="hover:text-emerald-400 transition-colors">
+                  support@merchantorders.io
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-emerald-500 shrink-0 mt-0.5" />
-                <span>[1-800-000-0000]</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={20} className="text-emerald-500 shrink-0 mt-0.5" />
-                <span>[123 Restaurant Way, Suite 100<br />Food City, FC 12345]</span>
+                <a href="tel:8002690818" className="hover:text-emerald-400 transition-colors">
+                  800.269.0818
+                </a>
               </li>
             </ul>
           </div>

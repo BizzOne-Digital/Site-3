@@ -5,8 +5,14 @@ import { CTA } from "@/components/sections/CTA"
 import { ShieldCheck, Heart, Zap, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Us | Merchant Orders",
-  description: "Learn about Merchant Orders, our mission, and our values in helping modern restaurants succeed.",
+  title: "About Merchant Orders",
+  description: "Learn about Merchant Orders and its mission to help restaurants own their digital ordering experience.",
+  alternates: { canonical: "https://www.merchantorders.io/about" },
+  openGraph: {
+    url: "https://www.merchantorders.io/about",
+    title: "About Merchant Orders",
+    description: "Learn about Merchant Orders and its mission to help restaurants own their digital ordering experience.",
+  },
 }
 
 export default function AboutPage() {
@@ -54,23 +60,20 @@ export default function AboutPage() {
             <AnimatedSection>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                The restaurant industry is evolving rapidly, but the tools to adapt shouldn't cost you your hard-earned margins. Our mission is to provide powerful, commission-free technology that helps you compete, grow, and maintain direct relationships with your guests.
+                The restaurant industry is evolving rapidly, but the tools to adapt shouldn't cost you your hard-earned margins. Our mission is to provide powerful online ordering technology that helps you compete, grow, and maintain direct relationships with your guests.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
                 By focusing on seamless integrations, beautiful design, and actionable analytics, Merchant Orders is here to level the playing field for modern restaurants.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.2} animation="scale-up">
-              <div className="rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl relative group">
-                <img 
-                  src="/images/about-mission.webp" 
-                  alt="Restaurant team and technology" 
-                  className="w-full h-auto block"
-                />
-                <div className="fallback hidden w-full h-full bg-emerald-50 p-8 flex items-center justify-center">
-                  <div className="w-48 h-48 rounded-full bg-emerald-200/50 flex items-center justify-center animate-pulse">
-                    <div className="w-32 h-32 rounded-full bg-emerald-300/50" />
-                  </div>
+              <div className="rounded-3xl overflow-hidden bg-emerald-50 border border-emerald-100 shadow-sm p-10 flex flex-col items-center justify-center text-center gap-6">
+                <div className="w-20 h-20 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Built for Restaurants</h3>
+                  <p className="text-slate-500 text-sm max-w-xs">Every feature we build is designed around the real needs of restaurant owners and operators.</p>
                 </div>
               </div>
             </AnimatedSection>

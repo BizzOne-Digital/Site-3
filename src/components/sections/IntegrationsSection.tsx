@@ -18,18 +18,18 @@ export const IntegrationsSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
         <AnimatedSection className="max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-            Works With Your Existing Tools
+            Built to Support Your Restaurant Stack
           </h2>
           <p className="text-lg text-slate-300">
-            Merchant Orders connects seamlessly with leading POS systems, payment gateways, delivery fleets, and marketing platforms.
+            Merchant Orders is designed to connect with the technology your restaurant already uses — from ordering to payments and delivery.
           </p>
         </AnimatedSection>
 
         {/* Orbiting / Grid of Integration Placeholders */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
           {[
-            "Square", "Toast", "Clover", "Stripe", 
-            "Uber Direct", "DoorDash Drive", "Mailchimp", "QuickBooks"
+            "POS Systems", "Payment Gateways", "Delivery Workflows", "Loyalty Tools",
+            "Mobile Ordering", "Analytics", "Customer Engagement", "Online Ordering"
           ].map((partner, index) => (
             <AnimatedSection key={index} delay={index * 0.1} animation="scale-up">
               <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 p-6 rounded-xl flex items-center justify-center hover:bg-slate-800 transition-colors h-24">

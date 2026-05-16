@@ -48,7 +48,7 @@ export const Hero = () => {
             </motion.div>
             
             <motion.h1 variants={item} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">
-              Commission-Free Online Ordering Built for Modern Restaurants
+              Powerful Online Ordering Built for Modern Restaurants
             </motion.h1>
             
             <motion.p variants={item} className="text-base md:text-lg lg:text-xl text-slate-300 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">

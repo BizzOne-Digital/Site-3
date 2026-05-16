@@ -128,8 +128,14 @@ const industryUseCases = [
 ]
 
 export const metadata: Metadata = {
-  title: "Industries | Merchant Orders",
-  description: "Merchant Orders provides tailored digital ordering solutions for pizzerias, coffee shops, ghost kitchens, and more.",
+  title: "Restaurant Types We Serve | Merchant Orders",
+  description: "Merchant Orders supports pizzerias, cafes, bakeries, coffee shops, food trucks, ghost kitchens, fast casual restaurants, and multi-location restaurant brands.",
+  alternates: { canonical: "https://www.merchantorders.io/industries" },
+  openGraph: {
+    url: "https://www.merchantorders.io/industries",
+    title: "Restaurant Types We Serve | Merchant Orders",
+    description: "Merchant Orders supports pizzerias, cafes, bakeries, coffee shops, food trucks, ghost kitchens, fast casual restaurants, and multi-location restaurant brands.",
+  },
 }
 
 export default function IndustriesPage() {

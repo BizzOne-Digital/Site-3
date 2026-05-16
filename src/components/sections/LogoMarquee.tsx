@@ -4,10 +4,10 @@ import React from "react"
 import { motion } from "framer-motion"
 
 export const LogoMarquee = () => {
-  // Placeholder names since we don't have real logos yet
+  // Generic integration category labels — no specific brand names
   const logos = [
-    "UberEats", "DoorDash", "Stripe", "Square", "Toast", 
-    "Grubhub", "Mailchimp", "QuickBooks", "Clover"
+    "POS Systems", "Payment Gateways", "Delivery Workflows", "Loyalty Tools",
+    "Mobile Ordering", "Analytics", "Customer Engagement", "Online Ordering", "QR Menus"
   ]
   
   // Duplicate the array to create a seamless loop

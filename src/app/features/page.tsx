@@ -9,7 +9,13 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Features | Merchant Orders",
-  description: "Explore the complete suite of tools to take control of your orders, understand your customers, and scale your restaurant brand.",
+  description: "Explore Merchant Orders features for restaurant online ordering, branded websites, mobile ordering, delivery workflows, loyalty, reporting, and dine-in QR ordering.",
+  alternates: { canonical: "https://www.merchantorders.io/features" },
+  openGraph: {
+    url: "https://www.merchantorders.io/features",
+    title: "Features | Merchant Orders",
+    description: "Explore Merchant Orders features for restaurant online ordering, branded websites, mobile ordering, delivery workflows, loyalty, reporting, and dine-in QR ordering.",
+  },
 }
 
 export default function FeaturesPage() {
