@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["300","400","500","600","700","800","900"] });
+const bebas = Bebas_Neue({ subsets: ["latin"], variable: "--font-bebas", weight: "400" });
 
 export const metadata: Metadata = {
   title: "Merchant Orders | Online Ordering for Modern Restaurants",
@@ -85,7 +86,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-slate-50 text-slate-900 min-h-screen flex flex-col`}>
+      <body className={`${inter.variable} ${bebas.variable} font-sans antialiased bg-[#020509] text-white min-h-screen flex flex-col`}>
         <Header />
         <main className="flex-grow">
           {children}
