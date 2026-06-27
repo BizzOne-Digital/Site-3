@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!feature) return { title: "Service Not Found" }
 
   return {
-    title: `${feature.title} | Services | Merchant Orders`,
+    title: `${feature.title} | Services | Merchant Orders™`,
     description: feature.description,
   }
 }

@@ -5,12 +5,12 @@ import { CTA } from "@/components/sections/CTA"
 import { ShieldCheck, Heart, Zap, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Merchant Orders",
+  title: "About Merchant Orders™",
   description: "Learn about Merchant Orders and its mission to help restaurants own their digital ordering experience.",
   alternates: { canonical: "https://www.merchantorders.io/about" },
   openGraph: {
     url: "https://www.merchantorders.io/about",
-    title: "About Merchant Orders",
+    title: "About Merchant Orders™",
     description: "Learn about Merchant Orders and its mission to help restaurants own their digital ordering experience.",
   },
 }

@@ -6,12 +6,12 @@ import { integrations } from "@/data/integrations"
 import { Plug, CreditCard, Truck, Gift } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Integrations | Merchant Orders",
+  title: "Integrations | Merchant Orders™",
   description: "Learn how Merchant Orders can support restaurant technology workflows and future integrations.",
   alternates: { canonical: "https://www.merchantorders.io/integrations" },
   openGraph: {
     url: "https://www.merchantorders.io/integrations",
-    title: "Integrations | Merchant Orders",
+    title: "Integrations | Merchant Orders™",
     description: "Learn how Merchant Orders can support restaurant technology workflows and future integrations.",
   },
 }

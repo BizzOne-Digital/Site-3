@@ -2,8 +2,8 @@ import React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Merchant Orders",
-  description: "Terms of Service for Merchant Orders.",
+  title: "Terms of Service | Merchant Orders™",
+  description: "Terms of Service for Merchant Orders™.",
 }
 
 export default function TermsPage() {

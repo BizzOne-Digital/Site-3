@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/Button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Features | Merchant Orders",
+  title: "Features | Merchant Orders™",
   description: "Explore Merchant Orders features for restaurant online ordering, branded websites, mobile ordering, delivery workflows, loyalty, reporting, and dine-in QR ordering.",
   alternates: { canonical: "https://www.merchantorders.io/features" },
   openGraph: {
     url: "https://www.merchantorders.io/features",
-    title: "Features | Merchant Orders",
+    title: "Features | Merchant Orders™",
     description: "Explore Merchant Orders features for restaurant online ordering, branded websites, mobile ordering, delivery workflows, loyalty, reporting, and dine-in QR ordering.",
   },
 }

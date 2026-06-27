@@ -2,8 +2,8 @@ import React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Merchant Orders",
-  description: "Privacy Policy for Merchant Orders.",
+  title: "Privacy Policy | Merchant Orders™",
+  description: "Privacy Policy for Merchant Orders™.",
 }
 
 export default function PrivacyPolicyPage() {

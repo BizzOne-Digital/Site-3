@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["30
 const bebas = Bebas_Neue({ subsets: ["latin"], variable: "--font-bebas", weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Merchant Orders | Online Ordering for Modern Restaurants",
+  title: "Merchant Orders™ | Online Ordering for Modern Restaurants",
   description: "Merchant Orders helps restaurants launch branded online ordering, delivery, pickup, loyalty, analytics, and customer engagement tools from one powerful platform.",
   icons: {
     icon: [{ url: "/images/logo-ta.png", type: "image/png" }],
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.merchantorders.io",
-    siteName: "Merchant Orders",
-    title: "Merchant Orders | Online Ordering for Modern Restaurants",
+    siteName: "Merchant Orders™",
+    title: "Merchant Orders™ | Online Ordering for Modern Restaurants",
     description: "Merchant Orders helps restaurants launch branded online ordering, delivery, pickup, loyalty, analytics, and customer engagement tools from one powerful platform.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Merchant Orders | Online Ordering for Modern Restaurants",
+    title: "Merchant Orders™ | Online Ordering for Modern Restaurants",
     description: "Merchant Orders helps restaurants launch branded online ordering, delivery, pickup, loyalty, analytics, and customer engagement tools from one powerful platform.",
   },
   robots: { index: true, follow: true },

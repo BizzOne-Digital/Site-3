@@ -6,12 +6,12 @@ import { CTA } from "@/components/sections/CTA"
 import { CheckCircle2 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "How It Works | Merchant Orders",
+  title: "How It Works | Merchant Orders™",
   description: "See how Merchant Orders helps restaurants set up, launch, and grow their branded online ordering experience.",
   alternates: { canonical: "https://www.merchantorders.io/how-it-works" },
   openGraph: {
     url: "https://www.merchantorders.io/how-it-works",
-    title: "How It Works | Merchant Orders",
+    title: "How It Works | Merchant Orders™",
     description: "See how Merchant Orders helps restaurants set up, launch, and grow their branded online ordering experience.",
   },
 }
